@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Fullname"
+        android:textColorHint="@android:color/black"
+        android:id="@+id/etFname"
+        />
+    <Spinner
+        android:id="@+id/spnCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spnHotelType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHint="@android:color/black"
+        android:hint="Select Check in date"
+        android:textSize="20sp"
+        android:id="@+id/txtCheckIn"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="20dp"
+        android:hint="Select Check in date"
+        android:textSize="20sp"
+        android:id="@+id/txtCheckOut"
+        />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="No of Adult: "
+               android:textColorHint="@android:color/black"
+               android:textSize="20sp"
+               />
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/etAdult"
+               android:textSize="25sp"
+               android:layout_marginLeft="20dp"
+               android:text="1"
+               android:inputType="number"
+               />
+
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:hint="No of Child: "
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etChild"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:hint="No of Room: "
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etRoom"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:text="1"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Calculate"
+         android:textSize="25dp"
+         android:id="@+id/btnCalculate"
+         android:textColor="@android:color/white"
+         android:background="@android:color/holo_blue_dark"
+         />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Billing"
+          android:textColorHint="@android:color/black"
+          android:textAlignment="center"
+          android:textSize="30dp"
+          />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp"
+            android:hint="Room Cost: "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRoomCost"
+            android:textColorHint="@android:color/black"
+            android:textSize="25sp"
+            android:hint=""
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp"
+            android:hint="No of Day(s): "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDays"
+            android:textColorHint="@android:color/black"
+            android:textSize="25sp"
+            android:hint=""
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textSize="23sp"
+            android:hint="Total: "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTotal"
+            android:textColorHint="@android:color/black"
+            android:textSize="25sp"
+            android:hint=""
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textSize="23sp"
+            android:hint="Total with Vat (13%): "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTotalVat"
+            android:textColorHint="@android:color/black"
+            android:textSize="25sp"
+            android:hint=""
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textSize="23sp"
+            android:hint="Total with SC (10%): "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTotalSC"
+            android:textColorHint="@android:color/black"
+            android:textSize="25sp"
+            android:hint=""
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textSize="23sp"
+            android:hint="Grabd Total: "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGrandTotal"
+            android:textColorHint="@android:color/black"
+            android:textSize="28sp"
+            android:hint=""
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
